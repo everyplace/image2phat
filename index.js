@@ -11,9 +11,6 @@ import fetch from 'node-fetch'
 const execAsync = util.promisify(exec); 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-//run only once
-const once = true
-
 const run = async () => {
 
   //process.env.TZ = 'Americas/New_York'
