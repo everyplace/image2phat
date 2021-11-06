@@ -52,8 +52,8 @@ const run = async () => {
   const basepath = process.env.basepath || '/home/pi/image2phat'
   const { stdout, stderr } = await execAsync(`${basepath}/display.py`)
 
-  if (stderr) throw new Error('crashed')
-  return  { stdout, stderr }
+  if (stderr) throw new Error('Stderr: crashed')
+  return  { now_message, report }
 
 }
 
